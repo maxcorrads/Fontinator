@@ -99,7 +99,7 @@ public class TypefaceLoader {
             letterSpace   = a.getFloat(R.styleable.Typefaceable_letterSpace, NO_LETTER_SPACE);
             textTransform = TRANSFORM.findByValue(a.getInt(R.styleable.Typefaceable_textTransform, TRANSFORM.NONE.value));
 
-            String typefaceName = a.getString(R.styleable.Typefaceable_font);
+            String typefaceName = a.getString(R.styleable.Typefaceable_typeface);
             setTypeface(typefaceName);
         } finally {
             a.recycle();
